@@ -1,0 +1,51 @@
+.navBarContainer{
+    background-color: rgb(176, 216, 237);
+    display: flex;
+    font-family:sans-serif;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.leftNavBar{
+    display: flex;
+    flex-direction: row;
+}
+#home{
+    padding-right: 50px;
+    padding-left: 45px;
+}#about {
+    padding-right: 50px;
+}#gallery {
+    padding-right: 50px;
+}
+
+.infoButton{
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+.rightNavBar{
+    padding-right: 50px;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.images{
+    border: 1px solid black;
+    size: 1px;
+    display: flex;
+    height: 200px;
+    border: 15px;
+}
+
+
+
+
+
