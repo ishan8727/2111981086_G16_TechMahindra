@@ -1,5 +1,6 @@
+
 .navBarContainer{
-    background-color: rgb(176, 216, 237);
+    background-color: rgb(223, 232, 237);
     display: flex;
     font-family:sans-serif;
     justify-content: space-between;
@@ -8,10 +9,13 @@
     border-radius: 5px;
     font-size: 20px;
     margin-bottom: 20px;
+    border-bottom: 2px solid rgb(132, 175, 239);
+    border-top: 2px solid rgb(132, 175, 239);-
 }
 .leftNavBar{
     display: flex;
     flex-direction: row;
+    font-size: 25px;
 }
 #home{
     padding-right: 50px;
@@ -24,9 +28,14 @@
 
 .infoButton{
     font-size: 20px;
-    border: 1px solid rgb(0, 0, 0);
+    font-family: sans-serif;
     border-radius: 5px;
-    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: white;
+    color: rgb(36, 33, 48);
+    background-color: rgb(252, 253, 255);
+    border: 2px solid #0d2390;
 }
 .rightNavBar{
     padding-right: 50px;
