@@ -27,6 +27,7 @@ body {
 }
 
 .container {
+    padding: 20px;
     position: fixed;
     width: 100%;
     margin: auto;
@@ -157,11 +158,11 @@ body {
 }
 .projectDescription{
     /* border: 1px solid blue; */
-    width: 50%;
-    height: 250px;
+    width: 60%;
+    height: fit-content;
     background-color: rgb(229, 208, 172);
     border-radius: 15px;
-    padding: 25px;
+    padding: 40px;
 }
 .projectImage{
     border: 1px solid black;

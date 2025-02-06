@@ -26,12 +26,14 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    width: 90%;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
     margin: auto;
     font-family: "Roboto Mono", serif;
     color: rgb(64, 9, 9);
-}
+    background-color: rgb(229, 208, 172);
+}   
 
 .navbar {
     box-shadow: 0px 5px 10px 0px #aaa;
@@ -105,16 +107,21 @@ body {
     border-radius: 10px;
     
 }
-.profileImageContainer{
-    /* border: 2px solid yellow; */
-    height: 400px;
-    font-size: 20px;
-    width:40%;
-    padding: 15px;
-    background-color: rgb(229, 208, 172);
-    width: 500px;
-    height: 500px;
+
+.profileImageContainer {
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .footerContainer{
     border-top: 2px solid rgb(180, 144, 88);
