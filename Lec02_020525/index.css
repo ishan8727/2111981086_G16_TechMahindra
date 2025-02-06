@@ -33,7 +33,7 @@ body {
     font-family: "Roboto Mono", serif;
     color: rgb(64, 9, 9);
     background-color: rgb(229, 208, 172);
-}   
+}
 
 .navbar {
     box-shadow: 0px 5px 10px 0px #aaa;
@@ -45,6 +45,7 @@ body {
     z-index: 100;
     border-bottom: 2px solid rgb(180, 144, 88);
     background-color: rgb(222, 199, 161) ;
+    margin-bottom:100px ;
 }
 
 .navbar-container {
@@ -95,6 +96,7 @@ body {
     padding: 10px;
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 .descriptionContainer{
     /* border: 2px solid green; */
@@ -112,23 +114,29 @@ body {
     height: 50%;
     width: 50%;
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .profileImageContainer img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
     object-fit: cover;
+
 }
 .footerContainer{
     border-top: 2px solid rgb(180, 144, 88);
     position: fixed;
     width:100vw ;
-    height: 100vw;
+    height:fit-content;
+    bottom: 0;
     background-color: rgb(229, 208, 172);
+    display:flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 .description{
@@ -141,6 +149,9 @@ body {
     font-weight: 500;
 }
 
+.ThankYou{
+    font-size: 50px;
+}
 
 
 
@@ -260,5 +271,23 @@ body {
 @media (max-width: 500px) {
     .navbar-container input[type="checkbox"]:checked~.logo {
         display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .myProfileContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myProfileContainer img{
+        height: 300px;
+        width: 300px;
+    }
+    .descriptionContainer{
+        overflow: scroll ;
+        height: 400px;
+        width:fit-content;
+        padding-bottom: 10px;
     }
 }

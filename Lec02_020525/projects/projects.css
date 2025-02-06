@@ -1,7 +1,15 @@
 body {
-    background-color: rgb(254, 249, 225);
-    color: rgb(109, 35, 35);
-    background-image: url("");
+  background-color: rgb(254, 249, 225);
+  color: rgb(109, 35, 35);
+  background-image: url("");
+}
+
+.footerContainer{
+    border-top: 2px solid rgb(180, 144, 88);
+    position: fixed;
+    width:100vw ;
+    height: 100vw;
+    background-color: rgb(229, 208, 172);
 }
 
 /* Web CSS */
@@ -11,282 +19,310 @@ body {
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .html {
-    font-size: 62.5%;
-    color: rgb(109, 35, 35);
+  font-size: 62.5%;
+  color: rgb(109, 35, 35);
 }
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
-    display: none;
+  display: none;
 }
 
 .container {
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    margin: auto;
-    font-family: "Roboto Mono", serif;
-    color: rgb(64, 9, 9);
-    background-color:rgb(229, 208, 172) ;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto Mono", serif;
+  color: rgb(64, 9, 9);
+  background-color: rgb(229, 208, 172);
 }
 
 .navbar {
-    box-shadow: 0px 5px 10px 0px #aaa;
-    /* position: fixed; */
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.85;
-    z-index: 100;
-    border-bottom: 2px solid rgb(180, 144, 88);
-    background-color: rgb(222, 199, 161);
+  box-shadow: 0px 5px 10px 0px #aaa;
+  /* position: fixed; */
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 100;
+  border-bottom: 2px solid rgb(180, 144, 88);
+  background-color: rgb(222, 199, 161);
 }
 
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
 }
 
 .menu-items {
-    order: 2;
-    display: flex;
-    color: rgb(109, 35, 35);
+  order: 2;
+  display: flex;
+  color: rgb(109, 35, 35);
 }
 
 .logo {
-    order: 1;
-    font-size: 2.3rem;
+  order: 1;
+  font-size: 2.3rem;
 }
 
 .menu-items li {
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.3rem;
-    color: rgb(109, 35, 35);
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  color: rgb(109, 35, 35);
 }
 
 .navbar a {
-    color: #444;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
-    color: #11705d;
+  color: #11705d;
 }
 
 /* BodyContainer CSS */
 
 .bodyContainer {
-    /* border: 2px solid red; */
-    padding: 20px;
-    margin-top: 50px;
+  /* border: 2px solid red; */
+  padding: 20px;
+  margin-top: 50px;
 }
 
 .myProfileContainer {
-    /* border: 2px solid blue; */
-    padding: 10px;
-    display: flex;
-    gap: 30px;
+  /* border: 2px solid blue; */
+  padding: 10px;
+  display: flex;
+  gap: 30px;
 }
 
 .descriptionContainer {
-    /* border: 2px solid green; */
-    margin-top: 50px;
-    height: fit-content;
-    font-size: 20px;
-    width: 60%;
-    padding: 25px;
-    background-color: rgb(229, 208, 172);
-    border-radius: 10px;
-
+  /* border: 2px solid green; */
+  margin-top: 50px;
+  height: fit-content;
+  font-size: 20px;
+  width: 60%;
+  padding: 25px;
+  background-color: rgb(229, 208, 172);
+  border-radius: 10px;
 }
 
 .profileImageContainer {
-    /* border: 2px solid yellow; */
-    height: 400px;
-    font-size: 20px;
-    width: 40%;
-    padding: 15px;
-    background-color: rgb(229, 208, 172);
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+  /* border: 2px solid yellow; */
+  height: 400px;
+  font-size: 20px;
+  width: 40%;
+  padding: 15px;
+  background-color: rgb(229, 208, 172);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
 }
 
 .footerContainer {
-    border-top: 2px solid rgb(180, 144, 88);
-    position: fixed;
-    width: 100vw;
-    height: 100vw;
-    background-color: rgb(229, 208, 172);
+  border-top: 2px solid rgb(180, 144, 88);
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgb(229, 208, 172);
 }
 
 .description {
-    font-family: "Roboto Mono", serif;
-    font-weight: 450;
+  font-family: "Roboto Mono", serif;
+  font-weight: 450;
 }
 
 .topDescription {
-    font-family: "Roboto Mono", serif;
-    font-size: 25px;
-    font-weight: 500;
+  font-family: "Roboto Mono", serif;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 /* Body container CSS */
 
-.projects{
-    /* border: 2px solid black; */
-    padding: 20px;
+.projects {
+  /* border: 2px solid black; */
+  padding: 20px;
 }
-.project{
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    gap: 20px;
-    margin-bottom: 20px;
+.project {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 30px;
+  margin-bottom: 20px;
+  align-items: center;
 }
-.projectDescription{
-    /* border: 1px solid blue; */
-    width: 60%;
-    height: fit-content;
-    background-color: rgb(229, 208, 172);
-    border-radius: 15px;
-    padding: 40px;
-}
-.projectImage{
-    border: 1px solid black;
-    width: 50%;
-    padding: 25px;
+.projectDescription {
+  /* border: 1px solid blue; */
+  width: 60%;
+  height: fit-content;
+  background-color: rgb(229, 208, 172);
+  border-radius: 15px;
+  padding: 45px;
 }
 
+.projectImage {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
+.projectImage img {
+  width: 100%;
+  border-radius: 5px;
+}
 
 /* Responsive Mobile view */
 
 /* Navbar Mobile view */
 
 @media (max-width: 768px) {
-    .navbar {
-        opacity: 0.95;
-    }
+  .navbar {
+    opacity: 0.95;
+  }
 
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines {
-        display: block;
-    }
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
 
-    .navbar-container {
-        display: block;
-        position: relative;
-        height: 64px;
-    }
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
 
-    .navbar-container input[type="checkbox"] {
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 30px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
 
-    .navbar-container .hamburger-lines {
-        display: block;
-        height: 28px;
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .navbar-container .hamburger-lines .line {
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
 
-    .navbar-container .hamburger-lines .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
 
-    .navbar-container .hamburger-lines .line2 {
-        transition: transform 0.2s ease-in-out;
-    }
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
 
-    .navbar-container .hamburger-lines .line3 {
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
-    }
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
 
-    .navbar .menu-items {
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow: 5px 0px 10px 0px #aaa;
-        overflow: scroll;
-    }
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
 
-    .navbar .menu-items li {
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 
-    .logo {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
-    }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
 
-    .navbar-container input[type="checkbox"]:checked~.menu-items {
-        transform: translateX(0);
-    }
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
 
-    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
 
-    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
-        transform: scaleY(0);
-    }
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
 
-    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }
-
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (max-width: 500px) {
-    .navbar-container input[type="checkbox"]:checked~.logo {
-        display: none;
-    }
+  .navbar-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectImage {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 25px;
+    overflow: hidden;
+  }
+  .description{
+    width: 100%;
+
+  }
+  .projectDescription{
+    width: 100%;
+  }
+
+  .projectImage img {
+    width: 100%;
+  }
 }
