@@ -10,6 +10,7 @@ body {
     width:100vw ;
     height: 100vw;
     background-color: rgb(229, 208, 172);
+    display: flex;
 }
 
 /* Web CSS */
@@ -131,11 +132,20 @@ body {
 
 .footerContainer {
   border-top: 2px solid rgb(180, 144, 88);
-  position: fixed;
+  /* position: fixed; */
+  bottom: 0; 
   width: 100vw;
-  height: 100vw;
+  height: 200px; 
   background-color: rgb(229, 208, 172);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+body {
+  padding-bottom: 200px; 
+}
+
 
 .description {
   font-family: "Roboto Mono", serif;
@@ -183,6 +193,11 @@ body {
 .projectImage img {
   width: 100%;
   border-radius: 5px;
+}
+
+.projectHead{
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Responsive Mobile view */
@@ -310,7 +325,7 @@ body {
   }
   .projectImage {
     /* border: 1px solid black; */
-    width: 50%;
+    width: 90%;
     padding: 25px;
     overflow: hidden;
   }
@@ -325,4 +340,9 @@ body {
   .projectImage img {
     width: 100%;
   }
+}
+
+.footerText{
+  font-size: 40px ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
