@@ -1,0 +1,232 @@
+body {
+  background-color: white;
+}
+
+/* NAVBAR CSS */
+
+.navBar {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.navButton button {
+  font-family: poppins;
+  background-color: white;
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+  border-radius: 20px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* BODY CONTAINER CSS */
+
+/* 1.   TOP HEADING CSS */
+
+.bodyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/* whole text div */
+
+.topText {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* BUID THE COMMUNITY..... */
+
+.topHead {
+  /* border: 1px solid blue; */
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  font-family: poppins, sans-serif;
+}
+/* HUDDLE re-imagines... */
+
+.descriptionText {
+  /* border: 1px solid red; */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: 550px;
+  font-family: poppins, sans-serif;
+  text-align: center;
+}
+
+/* Get started for free */
+
+.topButton button {
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  font-family: poppins, sans-serif;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-family: poppins, sans-serif;
+}
+
+/* UI image */
+
+.uiIMAGE {
+  padding-top: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.uiIMAGE img {
+  width: 80%;
+}
+
+/* NUMBERS */
+
+.stats {
+  margin-top: 100px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stat {
+  /* border: 2px solid green; */
+}
+
+.NumStat {
+  /* border: 1px solid blue; */
+  font-family: poppins, sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.messageStat {
+  /* border: 2px solid yellow; */
+  display: flex;
+  color: rgb(121, 116, 116);
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: poppins, sans-serif;
+}
+
+/* IMAGES + CONTENT */
+
+.features {
+  /* border: 2px solid black; */
+  margin-top: 120px;
+}
+
+.feature {
+  border: 2px solid black;
+  display: flex;
+  align-items: column;
+}
+
+.bkgTop img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.bkgBottom img {
+  width: 100%;
+}
+
+.featureImg {
+  /* border: 1px solid green; */
+  overflow: hidden;
+  width: 50%;
+  padding: 80px;
+}
+.featureImg img {
+  width: 100%;
+}
+.content {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(207, 100%, 98%);
+}
+
+.content2 {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: poppin, sans-serif;
+  width: 50%;
+  justify-content: center;
+  padding: 100px;
+}
+.textHead {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+}
+.textBottom {
+  font-size: 20px;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 600px) {
+  .stats {
+    margin-top: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .stat {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featureImg {
+    /* border: 1px solid green; */
+    overflow: hidden;
+    width: 100%;
+    padding: 80px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: row;
+  }
+}
