@@ -1,0 +1,76 @@
+JS -> Single thread loosely typed language.
+
+Q1. Synchronous vs asynchronous?
+A.  Synchronous-> line by line.
+    Asynchronous -> wait or run parallely.
+
+    JS is Synchronous language,
+        Asynchronous is a feature of it.
+
+Q2. var
+    clg
+    function xyz()
+    xyz()
+    clg 
+    var
+    => execution order is line by line.
+
+    2.
+    var
+    clg
+    function xyz()
+    => fetch data from server() => this is block thread because
+                                JS is a single thread language.
+    xyz()
+    clg 
+    var
+
+    So here cones asynchronous features of JS.
+
+Q3. var a=10;
+    function sqr(x){
+    var ans=x*x;
+    return ans;
+    }
+    console.log(sqr(a))
+
+A.   it runs in memory and execution phase.
+    -> var declared and undefined.
+    -> function stored.
+
+    -> then values put,passed  and function runs
+
+Q4. GEC -> global execution context.
+
+A.    first GEC is made (even when JS is emty it runs.)
+        GEC ->
+        _________________________________________
+       | MENORY                  |           CODE|
+
+        (env varialbles)                    (execution thread)
+        
+        var a = undefined                   Execution context: again made for function
+                                            ________________________________
+        sqr(){                              |MEMORY            |       CODE|
+            (everything stored)             var ans=undefined         
+        }                                   
+
+                                            phase 1 -> memory assignment
+                                            phase 2 -> values assigned and 
+
+
+    CALL STACK : is made and things run in an order.......
+
+    EC -> runs 1st
+    GEC -> then this pops and runs.
+
+    call STACK empty in last after running JS program.
+
+
+    first phase (compile time pe):
+             var, function stores in memory
+
+    now it runs from line 1.
+
+    secoond phase (execution stack): 
+            execution -> here sqr is called and runs.
