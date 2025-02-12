@@ -74,3 +74,6 @@ A.    first GEC is made (even when JS is emty it runs.)
 
     secoond phase (execution stack): 
             execution -> here sqr is called and runs.
+
+____________________________________________________________________________________________
+

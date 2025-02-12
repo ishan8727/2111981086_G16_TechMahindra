@@ -120,12 +120,173 @@
 
 // ________________________________________________________
 
-function abc(i){
-        setTimeout(() => {
-            console.log(i)
-        }, 1000);
+// function abc(i){
+//         setTimeout(() => {
+//             console.log(i)
+//         }, 1000);
+// }
+
+// for(var i=0; i<6; i++){
+//         console.log(abc(i));
+// }
+
+// ________________________________________________________
+
+// function x(){
+//     var a =7;
+//     function y(){
+//         console.log(a);
+//     }
+//     // a=100;
+//     return y;
+// }
+
+// var z=x();
+// console.log(z);
+
+// z();
+
+// ________________________________________________________
+
+// function z(){
+//     var b=900;
+
+//     function x(){
+//         var a =7;
+
+//         function y(){
+//             console.log(a, b);
+//         }
+//         y();
+//     }
+//     x();
+// }
+// z();
+
+// ________________________________________________________
+
+
+// IMPORTANT CASE
+
+
+// var count = 0;
+
+// function increment(){
+//     count++;
+// }
+
+// increment();
+// increment();
+// increment();
+
+// console.log(count);
+
+// function outside(){
+//     var count=0;
+//     function increment(){
+//         count=count+100;
+//         console.log(count);
+//     }
+//     return increment();
+    
+// }
+
+// var a = outside();
+
+
+// ________________________________________________________
+
+
+// function counter(){
+//     var count = 0;
+//     function increment(){
+//         count++;
+//         console.log(count);
+//     }
+//     return increment;
+// }
+
+// var counter1 = counter();
+// counter1();
+// counter1();
+// counter1();
+
+// console.log("===============================");
+
+// var counter2 = counter();
+// counter2();
+// counter2();
+// counter2();
+
+// ________________________________________________________
+
+// function Counter(){
+
+//     var count = 0;
+//     this.increment = function(){
+//         count++;
+//         console.log(count);
+//     };
+    
+//     this.decrement = function(){
+//         count--;
+//         console.log(count);
+//     };
+// }
+
+// var counter1 = new Counter();
+// counter1.increment();
+
+// ________________________________________________________
+
+// class Counter {
+//     constructor() {
+//         this.count = 0;
+//     }
+//     increment() {
+//         this.count++;
+//         console.log(this.count);
+//     }
+//     decrement(){
+//         this.count--;
+//         console.log(this.count);
+//     }
+// }
+
+// const counter1 = new Counter();
+
+// counter1.increment();
+// counter1.increment();
+// counter1.decrement();
+
+// const counter2 = new Counter();
+
+// counter2.increment();
+
+
+console.log(1);
+console.log(sum(10,5));
+
+setTimeout(()=>{
+    console.log(4);
+},2000)
+
+var start=1;
+var end=1000000000;
+while(start<end){
+    start++;
+}
+console.log("end");
+console.log("bend")
+
+setInterval(()=>{
+    console.log(9);
+    
+},4000);
+
+function sum(x,y){
+return x+y;
 }
 
-for(var i=0; i<6; i++){
-        console.log(abc(i));
-}
+// first synchronous tasks end then asynchronous tasks work
+//  this is due to the fact that JS is a single threaded language!.
