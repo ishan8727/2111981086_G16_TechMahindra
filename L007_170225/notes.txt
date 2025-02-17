@@ -1,0 +1,52 @@
+Callbacks are async and sync in nature.
+{if asked async or sync , mark async}
+
+setimeout and setinterval are callbacks.
+
+BLOCKING THE MAIN THREAD....
+
+Web APIs:
+- setinterval
+- setimeout
+- bluetooth
+- geolocation
+- url-path
+- cookies
+- sessions
+- localstorage
+- camera/microphone
+- console
+- etc......
+
+Browser -> Brawser engine - JRE(js runtime env) ......> WEb APIs
+
+    mciro -> promises
+    macro -> settimeout, setinterval
+    priority: micro > macro
+
+JS was first an interpretted language
+now,
+JavaScript:
+it is both interprtted and compiled language
+interpretter-> faster
+compiler -> quality
+
+code -> parsing -> interpret -> compiled........
+
+it depends on the JS engine,.
+kisi me interpret+compiled
+kisi me bs interpret
+
+google v8 -> most optimized
+mozilla Spidermonkey
+explorer Chakra
+
+JS engine is a program written in cpp.
+
+Parsing -=> tokens -> Ast(abstact Syntax tree) makes a big code of Json or tree type ->
+AST( https://astexplorer.net/ )
+
+
+
+                                                                                                   _
+
