@@ -1,0 +1,5 @@
+HOF => Higher Order Function
+        returns and takes a function.,
+
+callback -> mai chalunga tab jab kaam hojayega
+        is different concept.
