@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple CRUD App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+  <div class="w-full max-w-2xl bg-white p-6 rounded-lg shadow-xl">
+    <h1 class="text-2xl font-bold mb-4 text-center">User Management</h1>
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <input type="text" id="userId" placeholder="User ID" class="border p-2 rounded" />
+      <input type="text" id="userName" placeholder="Name" class="border p-2 rounded" />
+      <input type="number" id="userAge" placeholder="Age" class="border p-2 rounded" />
+    </div>
+    <button onclick="addOrUpdateUser()" class="w-full bg-green-500 text-white p-2 rounded">Add/Update User</button>
+    <div id="userTable" class="mt-6 overflow-x-auto"></div>
+  </div>
+
+  <script>
+    let users = [];
+
+    function addOrUpdateUser() {
+      const id = document.getElementById('userId').value.trim();
+      const name = document.getElementById('userName').value.trim();
+      const age = document.getElementById('userAge').value.trim();
+
+      if (!id || !name || !age) {
+        alert('All fields are required!');
+        return;
+      }
+
+      const index = users.findIndex(user => user.id === id);
+      if (index !== -1) {
+        users[index] = { id, name, age }; // Update existing user
+        alert('User data updated successfully!');
+      } else {
+        users.push({ id, name, age }); // Add new user
+      }
+
+      document.getElementById('userId').value = '';
+      document.getElementById('userName').value = '';
+      document.getElementById('userAge').value = '';
+      renderTable();
+    }
+
+    function deleteUser(id) {
+      users = users.filter(user => user.id !== id);
+      renderTable();
+    }
+
+    function renderTable() {
+      if (users.length === 0) return document.getElementById('userTable').innerHTML = '';
+
+      let tableHTML = `
+        <table class="w-full bg-white rounded-lg shadow-md">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-2">User ID</th>
+              <th class="p-2">Name</th>
+              <th class="p-2">Age</th>
+              <th class="p-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      users.forEach(user => {
+        tableHTML += `
+          <tr class="text-center border-b">
+            <td class="p-2">${user.id}</td>
+            <td class="p-2">${user.name}</td>
+            <td class="p-2">${user.age}</td>
+            <td class="p-2">
+              <button onclick="deleteUser('${user.id}')" class="bg-red-500 text-white px-2 py-1 rounded">Delete</button>
+            </td>
+          </tr>
+        `;
+      });
+
+      tableHTML += '</tbody></table>';
+      document.getElementById('userTable').innerHTML = tableHTML;
+    }
+  </script>
+</body>
+</html>
